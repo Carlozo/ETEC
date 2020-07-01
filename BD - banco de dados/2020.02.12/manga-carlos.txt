@@ -1,0 +1,35 @@
+CARLOS HETIEL 
+
+Questionário mangá
+
+1- Quais os motivos apresentados na descrição do problema justificam a criação de um Banco de Dados?
+A princesa Ruruna tinha muitos problemas na atualização de dados para cada departamento, dados duplicados, acúmulo de arquivos e conflitos.
+
+2- Qual a diferença entre utilizar um Banco de Dados ou um Sistema de Gerenciamento de Banco de Dados para a solução da situação abordada?
+O banco de dados permite que todos departamentos utilizem e interliguem seus dados, facilidade em alteração de dados, segurança, organização e etc.
+
+3- Por qual motivo se instalou uma crise no Reino de kod?
+A princesa Ruruna passou uma informação para os difentes departamentos (pediu alteração do preço da maça de 100, para 120 golds), e cada departamento
+entendeu uma coisa, sendo assim um colocou que a maça custava 120, o outro entendeu que não tinha alteração e o outro departamento alterou para 300
+golds, gerando assim um conflito.
+
+4- Por qual motivo os dados de um departamento não são compartilhados eficientemente com os demais departamentos?
+Cada departamento gerencia seus dados independentemente, dessa forma os dados são duplicados.
+
+5- O que vem a ser conflito de dados?
+Quando cada departamento alterou o dado cada um de um jeito, de forma erronea, fez com que  assim um problema fosse gerado, esses dados não "batiam",
+ou seja, gerou um conflito.
+
+6- Qual o modelo de Banco de Dados mais indicado para solucionar o problema do Reino de Kod? Justifique sua resposta
+SGBD, tem todas funções que eles precisam, como a de segurança, para não haver alteração de dados maliciosa, impede dados conflitantes, recuperação
+de dados, pode ser utilizado por muitas pessoas dentre outras funções.
+
+7- Quais informações seriam gerenciadas pelo Banco de Dados projetado para o Reino de Kod? 
+Dept. de vendas, dept. de negócios internacionais e dept. de exportação, todos eles mexeriam com a parte de dados das frutas.
+
+8- Quais as observações foram abordadas que justificam a necessidade de restrições ao acesso e à manipulação de algumas informações? 
+Segurança, alguém pode  roubar ou alterar dados maliciosamente, ou pode haver engano, então é melhor distrubuir chaves de acesso para determinadas 
+pessoas.
+
+9- Qual o significado de Kod, o nome dado ao reino?
+Possível referência a Edgar Frank Cood (1924 - 2003), matemático e criador do modelo de banco de dados relacional.

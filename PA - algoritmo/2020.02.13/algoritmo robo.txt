@@ -1,0 +1,38 @@
+﻿1.0  existem lâmpadas na caixa A?
+1.1  se sim, 
+2   mover escada para baixo do bocal
+3   deslocar-se até a caixa A
+4   pegar a lampada
+5   deslocar-se até a escada
+6   deslocar-se para o topo da escada
+7   mover lampada até o bocal
+8   girar 180° no sentido horário 3 vezes a lampada
+9   deslocar-se até a base da escada
+10   deslocar-se até o interruptor 
+11  pressionar interruptor
+1.2.2   a lampada acende? 
+1.2.3  se sim,
+13   deslocar-se até a escada
+14   deslocar-se até o topo da escada
+15   mover a garra ate o bocal
+16   girar 180° no sentido anti-horário 3 vezes a lampada
+17   deslocar-se até a base da escada 
+18   deslocar-se ate a caixa B
+19   soltar lampada na caixa B
+20   deslocar-se até a caixa A
+21   reiniciar o processo
+1.2.4  se não,
+   deslocar-se ate o lixo
+   soltar lampada no lixo
+   deslocar-se até a caixa A
+   reiniciar processo
+1.2  se nao,
+   finalizar processo
+
+
+
+
+
+
+
+

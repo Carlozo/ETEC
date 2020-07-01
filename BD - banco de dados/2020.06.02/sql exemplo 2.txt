@@ -1,0 +1,18 @@
+CREATE TABLE departamentos (
+cod_dept integer,
+nome_dept varchar (35) not null,
+atribuicao_dept varchar (40) not null,
+chefe_dept varchar (35) not null,
+PRIMARY KEY (cod_dept),
+FOREIGN KEY (cod_dept) REFERENCES departamentos
+)
+
+CREATE TABLE funcionarios (
+cod_func integer,
+nome_func varchar (35) not null,
+rg_func integer (9) UNIQUE,
+cpf_func integer (11) UNIQUE, 
+fone_func integer (7) not null,
+end_func varchar (30) not null,
+PRIMARY KEY (cod_func)
+)

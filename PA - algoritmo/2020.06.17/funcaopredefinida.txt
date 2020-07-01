@@ -1,0 +1,20 @@
+algoritmo "FuncoesPreDefinidas"
+
+var
+      N: caractere
+      C: inteiro
+Inicio
+      Escreva("Digite seu nome: ")
+      Leia(N)
+      Escreval("Total de letras do seu nome: ", Compr(N))
+      Escreval("Seu nome em maiusculas: ", Maiusc(N))
+      Escreval("Seu nome em minusculas: ", Minusc(N))
+      Escreval("A primeira letra  do seu nome e: ", Copia(Maiusc(N), 1, 1))
+      Escreval("A ultima letra  do seu nome e: ", Copia(Maiusc(N), compr(N), 1))
+      Escreval("O codigo da letra S e ", Asc("S") )
+
+  Para C <- Compr(N) ate 1 passo -1 faca //da ultima letra a primeira
+        Escreva (Copia(Maiusc(N), C, 1))
+  Fimpara
+  
+fimalgoritmo
