@@ -1,6 +1,0 @@
-Os carros estão divididos em diversos tipos: popular, luxo e utilitário. 
-As informações importantes sobre os carros a serem armazenadas são:
-código (placa do carro), tipo, modelo, ano, cor, chassis,
-quilometragem e valor do aluguel (diária).
-
- tipos: popular, luxo e utilitário.
