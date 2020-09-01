@@ -1,0 +1,15 @@
+create table pagamento (
+	pagamento_id int not null,
+    pagamento_concluido_simulacao enum ('pendente','pago') not null,
+    pagamento_data_negociacao date not null,
+    pagamento_valor decimal (2,10) not null,
+    pagamento_id_usuario int not null,
+    pagamento_id_construtora_master int not null,
+    pagamento_pessoa_ou_obra enum ('pessoa','obra') not null,
+    pagamento_id_pessoa_ou_obra int not null,
+    primary key (pagamento_id)
+);
+
+create table pagamento_forma (
+	pagamento_nome_forma varchar(100) not null
+);

@@ -1,0 +1,21 @@
+  	-ciclo de vida: cascata (muito documental e burocrático)
+  	-levantamento de requisitos de sofware: workshop/brainstorm
+
+ -funcionais:
+-cadastramento de candidatos
+-registrar votos
+-exibir relatório em porcentagem do número de votos e colocação de candidatos
+
+ -não-funcionais: 
+-interface simples e limpa
+-velocidade e praticidade
+-segurança 
+
+
+
+
+   UML
+   -diagrama de caso de uso
+-documentação
+   -diagrama de classes 
+   

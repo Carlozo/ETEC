@@ -1,0 +1,4 @@
+unsplash - fotos
+favicons.io - logo da guia
+cdnjs.com - icons
+uigradientes - gradientes

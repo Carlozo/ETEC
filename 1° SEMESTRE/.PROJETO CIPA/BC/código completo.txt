@@ -1,0 +1,49 @@
+create database eleicao
+default character set utf8
+default collate utf8_general_ci;
+
+use eleicao;
+
+create table candidato (
+nome varchar (30) not null,
+apelido varchar (20) not null,
+idade tinyint (2) not null,
+tempo_servico tinyint (2) not null,
+setor varchar (30) not null,
+numero int (5) not null unique,
+PRIMARY KEY (numero)
+)DEFAULT CHARSET= utf8;
+
+create table funcionario (
+nome varchar (30) not null,
+cpf int (11) not null,
+rg int (9) unique not null,
+data_nasc date not null,
+endereco varchar (40) not null,
+cidade varchar (25) not null,
+nis int (11) not null,
+estado_civil enum ('SOLTEIRO','CASADO','VIUVO'),
+data_ingresso date not null,
+PRIMARY KEY (cpf)
+)DEFAULT CHARSET= utf8;
+
+create table telefone (
+cpf int (11) not null,
+telefone varchar (11) not null,
+foreign key (cpf) references funcionario(cpf)
+)DEFAULT CHARSET= utf8;
+
+create table voto (
+cpf int (11) not null,
+numero int (5) unique not null,
+voto_int int (4),
+voto_perc int(2),
+FOREIGN KEY (cpf) REFERENCES funcionario(cpf),
+FOREIGN KEY (numero) REFERENCES candidato(numero)
+)DEFAULT CHARSET= utf8;
+
+
+describe eleicao;
+describe funcionario;
+describe telefone;
+describe voto;

@@ -1,0 +1,36 @@
+1- conector de fonte de alimentação de 24 pinos de fonte ATX
+2- slot mini pci express (conetor de placa de video, placa de som, placa USB e etc)
+3- pode ser chamado de ps2, db6 e miniDim
+4- interface DVI cabo de video
+5- VGA cabo de video
+6- USB 3
+7- cabo de ethernet
+8- HDMI
+9- conector P2, pra áudio
+10- capacitor sólido, serve para armazenar energia e distribuir na placa
+11- PCI-express, conector de placas off board
+12- conector SATA, serve para conectar no HD, DRIVE de CD, BLURAY e etc
+13- slot PCI (placa AT), mesma função do PCI-express
+14- painel do sistema de leds
+15- dessipador de calor 
+15.1- chipset ponte sul, serve para controlar os periféricos lentos (placa de video, placa de som, placa de audio e etc)
+16- dessipador 
+16.1- chipset ponte norte (serve para controlar os periféricos rápidos (memória RAM, processador e etc)
+OBS: ARQUITETURAS ATUAIS TEM AS FUNÇÕES DO CHIPSET PONTE NORTE ESTÁ INTEGRADA NO PROCESSADOR
+17- cabo IDE (placa AT), mesma função do cabo SATA, servia para transmissão de dados 
+18- slot de memória RAM
+19- soquete de processador
+20- interface serial (conector de mouse) (placa AT)
+21- interface paralela (conector de impressora) (placa AT)
+22- mini PCI express
+23- bateria de lithium  
+24- amibios (também conhecida como RON BIOS)  
+25- conector ATX
+26- capacitor eletrolítico
+27- cpu-fun, conector de cooler
+28- CMOS
+29- USB
+30- BUZZER
+31- USB
+32- interface de video
+33- capacitor eletrolítico 
