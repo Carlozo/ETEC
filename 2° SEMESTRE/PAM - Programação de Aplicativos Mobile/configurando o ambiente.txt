@@ -1,0 +1,4 @@
+1 - baixar o nodeJS
+2 - baixar o jdk
+3 - configurar a variavel de ambiente %JAVA_HOME%
+4 - baixar o android studio
