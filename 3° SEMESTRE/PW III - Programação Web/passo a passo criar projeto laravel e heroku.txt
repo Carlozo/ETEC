@@ -1,0 +1,21 @@
+cd caminho da pasta
+composer create-project laravel/laravel --prefer-dist nome
+cd na nova pasta
+git init 
+git add .
+git commit -m "texto"
+heroku create nome 
+git remote -v
+git remote add origin linkDoGitHub
+git remote -v
+colocar o arquivo Procfile na pasta pra definir a lignaugem pro heroku
+git add .
+git commit -m "texto"
+git push heroku master
+php artisan key:generate --show
+copia a chave que mostrar
+heroku config:set APP_KEY=linkDaChave
+
+
+
+heroku config:set APP_DEBUG=true (pra ver erros)
