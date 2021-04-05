@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mostra Mapa Centralizado</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+
+    <body>
+    <div id='map' style='width: 800px; height: 600px;'></div>
+
+    <script>          
+//https://www.simicart.com/blog/pwa-geolocation/
+//https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+
+      var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+      };
+
+      
+
+      navigator.geolocation.getCurrentPosition(position => {
+          console.log(position.coords.latitude);
+          console.log(position.coords.longitude);
+          
+          mapboxgl.accessToken = 'pk.eyJ1Ijoid2FnbmVybWFycXVlcyIsImEiOiJjanZlZnllNDQwamczNGRwbmM3a3lxN3UyIn0.2IrgrK7peJF9P2oxhDVwTg';
+          var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/outdoors-v11',
+              center: [position.coords.longitude, position.coords.latitude],
+              zoom: 10 // starting zoom
+          });
+
+          var marker = new mapboxgl.Marker({
+              color: "#7FFF00",
+              draggable: true
+          }).setLngLat([position.coords.longitude, position.coords.latitude])
+              .addTo(map);
+
+          
+      }, err => {
+          console.warn(`ERROR(${err.code}): ${err.message}`);
+      },options);
+      
+
+      //S T Y L E
+      //style: 'mapbox://styles/mapbox/streets-v11'
+      //https://www.mapbox.com/gallery/
+      //https://docs.mapbox.com/studio-manual/reference/styles/
+      //https://docs.mapbox.com/api/maps/styles/
+
+      //token
+      //https://account.mapbox.com/
+    </script>
+  </body>
+</html> 

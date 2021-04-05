@@ -1,0 +1,6 @@
+heroku addons:create --app nomedoapp heroku-postgresql:hobby-dev
+heroku config --app nomedoapp (caso precise ver as configurações)
+heroku pg:psql --app nomedoapp
+
+*lendo a url:
+nomedobanco:senha@computador:porta/usuario*

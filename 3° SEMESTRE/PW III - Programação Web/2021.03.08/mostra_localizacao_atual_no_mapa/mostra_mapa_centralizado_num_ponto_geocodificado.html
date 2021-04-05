@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mostra Mapa Centralizado</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css'
+          rel='stylesheet' />
+
+    <style>
+      #geocoder-container > div {
+          min-width: 50%;
+          margin-left: 25%;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css">
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    
+    
+    <div id='map' style='width: 800px; height: 600px;'></div>
+
+    <script>          
+      //https://www.simicart.com/blog/pwa-geolocation/
+      //https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+
+  
+      mapboxgl.accessToken = 'pk.eyJ1Ijoid2FnbmVybWFycXVlcyIsImEiOiJjanZlZnllNDQwamczNGRwbmM3a3lxN3UyIn0.2IrgrK7peJF9P2oxhDVwTg';
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/outdoors-v11',
+          center: [-46.641392499999995, -23.5411191],
+          zoom: 10 // starting zoom
+      });
+      
+      var geocoder = new MapboxGeocoder({
+          accessToken: mapboxgl.accessToken,
+          marker: {
+              color: 'orange'
+          },
+          mapboxgl: mapboxgl
+      });
+      
+      map.addControl(geocoder);    
+
+    </script>
+  </body>
+</html> 

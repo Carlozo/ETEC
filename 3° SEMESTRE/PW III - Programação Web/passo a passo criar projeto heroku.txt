@@ -1,0 +1,11 @@
+cria pasta 
+cd na nova pasta
+git init 
+heroku create nome 
+git remote -v
+git remote add origin linkDoGitHub
+git remote -v
+colocar o arquivo Procfile na pasta pra definir a lignaugem pro heroku
+git add .
+git commit -m "texto"
+git push heroku master

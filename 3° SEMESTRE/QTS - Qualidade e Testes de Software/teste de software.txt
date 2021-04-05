@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------------
+                             NÍVEIS DE TESTE DE SOFTWARE 
+
+TESTE DE UNIDADE: teste de apenas uma unidade em específico isolada(por exemplo, uma classe, função, método)
+TESTE DE INTEGRAÇÃO: testa como uma unidade ou sistema trabalha integrado a outro
+TESTE DE SISTEMA:
+TESTE DE ACEITAÇÃO: pega os requisitos pedidos no inicio e compara com o software pronto para ver ser está de acordo
+TESTE DE REGRESSÃO: teste se nada antigo quebrou quando é implementado algo novo
+TESTE ALFA: coloca algumas pessoas da empresa pra testar o software
+TESTE BETA: coloca clientes próximos a empresa pra testar o software
+
+
+-----------------------------------------------------------------------------------
+                             TÉCNICAS DE TESTE DE SOFTWARE 
+
+TESTES DE CAIXA BRANCA (ESTRUTURAL)
+-teste de unidade
+-teste de integração
+
+TESTES DE CAIXA PRETA (FUNCIONAL)
+-testes funcionais
+-testes de aceitação
+
+TESTES DE CAIXA CINZA
+-testes de regressão
+-testes de cobertura
