@@ -1,4 +1,4 @@
 unsplash - fotos
-favicons.io - logo da guia
+favicon.io - logo da guia
 cdnjs.com - icons
 uigradientes - gradientes
